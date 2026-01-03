@@ -1,0 +1,1 @@
+// This file is the entry point of the application. It contains the main logic of the JavaScript project.
