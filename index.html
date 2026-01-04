@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="cs">
 
+<!-- HLAVIČKA -->
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
     <title>První zgarbák</title>
+
 </head>
 
-<!-- komentář -->
+<!-- TĚLO -->
 
 <body>
-    
-    <h1 id="text">Startovací text ...</h1>
+    div id="container"> 
 
-    <div>
-        <label for="speed">Rychlost</label>
-        <input type="number" name="" id="speed" 
-        value="1" min="1" max="10" step="1">
+        <header>
+            <nav>
+                <a href="index.html">Domů</a>
+                <a href="sportoviste.html">Sportoviště</a>
+                <a href="formular.html">Formulář</a>
+            </nav>  
+            
+        </header>
+        <main>
+            <h1>Formulář</h1>
+        <form>
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name" required> 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="date" name="" id=""><br>  
 
+            <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <input type="submit" name="" value="Odeslat"> 
+            <br>
+            <br>
+        </form>
+            <p>Toto je jednoduchá webová stránka vytvořená pomocí HTML a CSS.</p>
+
+        </main>
+        <footer>
+            
+        </footer>
     </div>
-
-    <div>
-        <label for="vek">Věk</label>
-        <input type="number" name="" id="vek" 
-        value="23" min="1" max="95" step="1">
-    </div>
-
-    <h2 id="dospelec">Potvrď svůj věk</h2>
-  
-     <div>
-        <label for="jmeno">Jak se jmenuješ </label>
-        <input type="text" name="" id="jmeno" 
-        value="...">
-    </div>
-    
-    <ul>
-        <li>Student1</li>  
-        <li>Student2</li>
-        <li>Student3</li>
-        <li>Student5</li>  
-    </ul>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, id quo nisi delectus cupiditate ex vero? Suscipit, molestias optio. Tempora magni facilis animi laboriosam natus iusto aspernatur quo voluptate a.</p>
-
-
-    <ol>
-        <li>Student4</li>
-        <li>Student2</li>
-    </ol>
-
-    // Obrázek snowboard kámoši
-    <img src="obr/SNB kámoši.png" alt="snowboard kámoši" width="400">
-
-//vložené  video
-    <iframe width="700" height="700" 
-        src="https://www.youtube.com/embed/bzrgneqhD6g" 
-        title="13. Tvorba webu (HTML a CSS) - Vložení videa z YouTube do stránek do HTML kódu" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-        picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-
-
-
-
-    <a href="about.html">About</a>
-    <a href="https://www.seznam.cz/" target="_blank">Seznam</a>
-    <script src="script.js"></script>
 
 </body>
+
 </html>
