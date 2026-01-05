@@ -1,118 +1,146 @@
-* {
+* { 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
- }
+  
+ }  
 
-#container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    
-}
-header {
-    background-color: rgb(137, 157, 133);
-    padding: 10px 0;
+
+html {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    
+
+
 }
 
-header h1 {
-    margin: 0;
+body {
+    min-height: 100vh;
+    background-image: url('pexels-michael-steinberg-95604-321452(1).jpg');
+    background-size:auto;
+    background-position: center;
+    overflow: hidden;   
 }   
 
-body  {
-    background-color:antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 90vh;
-    margin-left: 10px;
+.wrapper {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    border-radius: 0 25px 25px 0    ;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}   
 
-/*    text-shadow: 2px 2px 4px #aaaaaa;
+h1  {
+    font-size: 3rem;
+    font-weight: 900    ; 
+    text-transform: uppercase;
+}
+ 
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
-    */
+    gap: 10px;
 }
 
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-input {
-    margin-left: 10px;
-    margin-right: 10px;
-}   
-
-input[type="submit"] {
-    padding: 10px;
-
-/* CSS styles for the webpage 
-
-h1 {
-  color: green;
-    font-size: 40px;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    text-align: center;
-}
-.prvni {
-    font-size: 20px;
-    color: darkblue;
-    margin-bottom: 20px;
-    text-shadow: none;
 }
 
-
-.container1 {
-     position:center;
-     bottom: 30px;
-     background: rgb(239, 217, 162);
-     font-size: 20px;
-     padding: 10px 20px;
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #ebd809;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;   
 }
 
-a   {
-    color: brown;
-    text-decoration: none;
-    font-weight: bold;
-}
+form input {
 
-input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #ebd80926;
     
-    width: 60px;
-    padding: 8px;
-    font-size: 21px;
-    background: rgb(260, 217, 162);
-    border: none;
-    text-align: center;
-
+    background-color: #ebd80926;
+    outline: none;
+    transition: 150ms ease;
 }
 
-
-label  {
-  
-    margin-right: 10px;
+form input:hover{
+    border: 6px solid #ebd809;
 }
 
-img {
-    width: 400px;
-    height: auto;
-    margin-top: 50px;
-    border-radius: 70px 0px 70px 0px;
-    box-shadow: 50px 50px 15px rgba(223, 38, 38, 0.3);
+form input:focus {
+   outline:none ;
+   border-color: #ebd809;
+}
+
+div:has(input:focus) > label{
+    background-color: 2px solid #ebd809;
+}
+
+form input::placeholder {
+    color: #ebd809;
+    opacity: 0.7;
 }   
 
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 0.85em;
+    padding: 0.85em 4em;
+    background-color: #ebd80926;
+    color: #333;
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
 
+}
 
-input:focus {
+form button:hover {
+    background-color:#ebd809; 
+}
+
+form button:focus {
     outline: none;
+    background-color:#ebd809;
 }
 
-p {
-    font-size: 20px;
-    color: gray;
-    border: 5px solid rgb(12, 240, 54) ;
-        text-shadow: none;
+@media (max-width: 1100px) {
+    .wrapper {
+        width: min(600px, 100%);
+        border-radius: 0;
+    }
 }
- End of CSS styles */
+
+.incorrect label{
+    border-color:#f06272;
+}
+
+.incorrect input {
+    border-color:  #f06272;
+}
