@@ -137,10 +137,16 @@ form button:focus {
     }
 }
 
-.incorrect label{
-    border-color:#f06272;
+form div.incorrect label{
+    background-color:#f06272;
 }
 
-.incorrect input {
+form div.incorrect input {
     border-color:  #f06272;
 }
+
+#error-message {
+    color: #f06272;
+    font-weight: 600;
+    height: 1.2em;
+}   
